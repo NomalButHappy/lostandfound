@@ -1,0 +1,63 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.userinfo-avatar {
+  overflow:hidden;
+  display: block;
+  width: 160rpx;
+  height: 160rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  font-family: "楷体";
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.csuicon{
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.csuimg{
+  width: 400rpx;
+  height: 100rpx;
+  margin-top: 16%
+}
+
+.lost{
+  width: 300rpx;
+  height: 75rpx;
+  margin-top: 10%
+}
+
+.and{
+  width: 80rpx;
+  height: 80rpx;
+  margin-top: 6%
+}
+
+.found{
+  width: 300rpx;
+  height: 75rpx;
+  margin-top: 6%
+}
+
+.getin{
+  margin-top: 5%;
+  border-radius: 30%;
+}

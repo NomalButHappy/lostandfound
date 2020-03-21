@@ -1,0 +1,58 @@
+<!--index.wxml-->
+
+  <!--_ _ _              _  _ _
+     く__,.ヘヽ.　　　　/　,ー､ 〉
+　　　　　＼ ', !-─‐-i　/　/´
+　　　 　 ／｀ｰ'　　　 L/／｀ヽ､
+　　 　 /　 ／,　 /|　 ,　 ,　　　',
+　　　ｲ 　/ /-‐/　ｉ　L_ ﾊ ヽ!　 i
+　　　 ﾚ ﾍ 7ｲ｀ﾄ　 ﾚ'ｧ-ﾄ､!ハ|　 |
+　　　　 !,/7 '0'　　 ´0iソ| 　 |　　　
+　　　　 |.从"　　_　　 ,,,, / |./ 　 |
+　　　　 ﾚ'| i＞.､,,__　_,.イ / 　.i 　|
+　　　　　 ﾚ'| | / k_７_/ﾚ'ヽ,　ﾊ.　|
+　　　　　　 | |/i 〈|/　 i　,.ﾍ |　i　|
+　　　　　　.|/ /　ｉ： 　 ﾍ!　　＼　|
+　　　 　 　 kヽ>､ﾊ 　 _,.ﾍ､ 　 /､!
+　　　　　　 !'〈//｀Ｔ´', ＼ ｀'7'ｰr'
+　　　　　　 ﾚ'ヽL__|___i,___,ンﾚ|ノ
+　　　　　 　　　ﾄ-,/　|___./
+　　　　　 　　　'ｰ'　　!_,.:
+     -->
+
+<view>
+  <view class="csuicon">
+    <image class="csuimg" src="../img/logo.png"></image>
+    <image class="lost" src="../img/lost.png"></image>
+    <image class="and" src="../img/and.png"></image>
+    <image class="found" src="../img/found.png"></image>
+  </view>
+  <view class="userinfo">
+    <!--
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" bindtap="dispath"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <button class="getin" bindtap="dispath">进入</button>
+    </block>
+    -->
+    <open-data type="userAvatarUrl" class="userinfo-avatar"></open-data>
+    <open-data type="userNickName" lang="zh_CN" class="userinfo-nickname"></open-data>
+    <button class="getin" bindtap="dispath">进入</button>
+  </view>
+</view>
+
+<!--
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+-->

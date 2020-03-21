@@ -1,0 +1,107 @@
+/* pages/home/home.wxss */
+
+.csuicon{
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.csuimg{
+  width: 90%;
+  height: 15%;
+  opacity:0.6;
+  position: absolute;
+  top: 60rpx;
+  z-index: -1;
+}
+
+.userinfo-avatar {
+  overflow:hidden;
+  display: block;
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 40rpx;
+}
+
+.userinfo-nickname {
+  color: #000000;
+  font-family: "楷体";
+  font-size: 27px;
+  margin-top: 20rpx;
+}
+
+.home-menu{
+  height:150rpx;
+}
+
+.swiper-tab{
+  width: 100%;
+  border-bottom: 2rpx solid #ccc;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.swiper-tab-item{
+  width: 50%; 
+  color:#434343;
+}
+.active{
+  color:#F65959;
+  border-bottom: 4rpx solid #F65959;
+}
+swiper{
+  text-align: center;
+  position: absolute;
+  top:30%;
+  bottom: 150rpx;
+  left:30rpx;
+  right:30rpx;
+  height:auto;
+}
+
+.bottom{
+  width:100%;
+  height:135rpx;
+  background-color: white;
+  background: -webkit-linear-gradient(bottom left, #66ccff, #ffffff);
+  position: fixed;
+  bottom: 0;
+}
+
+swiper-item{
+  overflow: auto;
+}
+
+.basic{
+  width: 92%;
+  height: 20%;
+  margin-left: 16rpx;
+  margin-top:10%;
+  background-color: #fcce77;
+  border-radius: 12px;
+  border: 2px solid #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.homeicon{
+  position: absolute;
+  height: 57rpx;
+  width: 57rpx;
+  left: 20%;
+  top:22%;
+}
+
+.personicon{
+  position: absolute;
+  height: 57rpx;
+  width: 57rpx;
+  right:20%;
+  top:22%;
+}
