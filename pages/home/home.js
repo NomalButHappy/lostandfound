@@ -1,4 +1,12 @@
 // pages/home/home.js
+
+function Detail(name, phone) {
+  this.name = name;
+  this.phone = phone;
+}
+function Info() {
+  this.details = [];
+}
 Page({
 
   /**
@@ -6,7 +14,7 @@ Page({
    */
   data: {
     currentTab: 0,
-    motto: null
+    info: {}
   },
 
   /**
@@ -21,14 +29,24 @@ Page({
         'content-type': 'application/json' // 默认值
       },
       success: function (res) {
-        let back = res.data
+        let back = JSON.parse(res.data);
         console.log(res.data);
-        console.log(JSON.parse(back).Table[0])
-        console.log(JSON.parse(back).Table[0].name)
-        _this.setData({ motto: JSON.parse(back).Table[0].name});
-        console.JSON;
-
-        
+        console.log(back.Table[1])
+        console.log(back.Table[0].name)
+        //console.JSON;
+        _this.setData({
+          info: new Info(),
+        });
+        for (var i = 0; i < back.Table.length; i++)
+        {
+          console.log(back.Table[i]);
+          let infom = _this.data.info;
+          infom.details.push(new Detail(back.Table[i].name, back.Table[i].phone));
+          _this.setData({
+            info: infom
+          });
+        }
+        console.log(_this.data.info)
       }
     })
   },

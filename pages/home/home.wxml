@@ -17,41 +17,12 @@
  
   <swiper current="{{currentTab}}" duration="300" bindchange="swiperTab">
     <swiper-item>
-      <view class="basic">
-        <text class="user-motto">{{motto}}</text>
-      </view>
-      <view class="basic">
-        <text class="user-motto">{{motto}}</text>
-      </view>
-      <view class="basic">
-        <text class="user-motto">{{motto}}</text>
-      </view>
-      <view class="basic">
-        <text class="user-motto">{{motto}}</text>
-      </view>
-      <view class="basic">
-        <text class="user-motto">{{motto}}</text>
-      </view>
-      <view class="basic">
-        <text class="user-motto">{{motto}}</text>
+      <view wx:for="{{info.details}}" class="basic" wx:key="key">
+        <text class="user-motto">{{item.name}}</text>
+        <text class="user-motto">{{item.phone}}</text>
       </view>
     </swiper-item>
     <swiper-item>
-      <view class="basic">
-        <text class="user-motto">{{motto}}</text>
-      </view>
-      <view class="basic">
-        <text class="user-motto">{{motto}}</text>
-      </view>
-      <view class="basic">
-        <text class="user-motto">{{motto}}</text>
-      </view>
-      <view class="basic">
-        <text class="user-motto">{{motto}}</text>
-      </view>
-      <view class="basic">
-        <text class="user-motto">{{motto}}</text>
-      </view>
       <view class="basic">
         <text class="user-motto">{{motto}}</text>
       </view>
