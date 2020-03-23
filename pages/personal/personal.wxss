@@ -1,1 +1,26 @@
 /* pages/personal/personal.wxss */
+
+.bottom{
+  width:100%;
+  height:135rpx;
+  background-color: white;
+  background: -webkit-linear-gradient(bottom left, #66ccff, #ffffff);
+  position: fixed;
+  bottom: 0;
+}
+
+.homeicon{
+  position: absolute;
+  height: 57rpx;
+  width: 57rpx;
+  left: 20%;
+  top:22%;
+}
+
+.personicon{
+  position: absolute;
+  height: 57rpx;
+  width: 57rpx;
+  right:20%;
+  top:22%;
+}

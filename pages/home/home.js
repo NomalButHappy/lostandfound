@@ -116,5 +116,10 @@ Page({
         currentTab: e.target.dataset.current
       })
     }
+  },
+  dispath: function () {
+    wx.redirectTo({
+      url: '../personal/personal',
+    })
   }
 })

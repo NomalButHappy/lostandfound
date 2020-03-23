@@ -62,5 +62,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  dispath: function () {
+    wx.redirectTo({
+      url: '../home/home',
+    })
   }
 })

@@ -1,2 +1,8 @@
 <!--pages/personal/personal.wxml-->
-<text>pages/personal/personal.wxml</text>
+
+<view>
+  <view class="bottom">
+    <image class="homeicon" src="../../img2/Icons-Tab_home_d.png" bindtap="dispath"></image>
+    <image class="personicon" src="../../img2/Icons-Tab_profile_d.png"></image>
+  </view>
+</view>
