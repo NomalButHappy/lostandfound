@@ -1,6 +1,6 @@
 <!--pages/home/home.wxml-->
 
-<!-->
+<!--
 <progress percent="80" active />
 -->
 
@@ -17,14 +17,27 @@
 
   <swiper current="{{currentTab}}" duration="300" bindchange="swiperTab">
     <swiper-item>
-      <view wx:for="{{info.details}}" class="basic" wx:key="key">
-        <text class="user-motto">{{item.name}}</text>
-        <text class="user-motto">{{item.phone}}</text>
+      <view wx:for="{{info.lost}}" class="basic" wx:key="key">
+        <view>
+          <text style="">失物:</text>
+          <text class="user-motto">{{item.name}}</text>
+        </view>
+        <view>
+          <text>地点:</text>
+          <text class="user-motto">{{item.where}}</text>
+        </view>
       </view>
     </swiper-item>
     <swiper-item>
-      <view class="basic">
-        <text class="user-motto">{{motto}}</text>
+      <view wx:for="{{info.found}}" class="basic" wx:key="key">
+        <view>
+          <text style="">寻物:</text>
+          <text class="user-motto">{{item.name}}</text>
+        </view>
+        <view>
+          <text>地点:</text>
+          <text class="user-motto">{{item.where}}</text>
+        </view>
       </view>
     </swiper-item>
   </swiper>

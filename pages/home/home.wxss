@@ -1,5 +1,9 @@
 /* pages/home/home.wxss */
 
+text{
+  font-family: "KaiTi";
+}
+
 .csuicon{
   height: 20%;
   display: flex;
