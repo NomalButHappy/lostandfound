@@ -11,16 +11,78 @@
 
 .homeicon{
   position: absolute;
-  height: 57rpx;
-  width: 57rpx;
-  left: 20%;
-  top:22%;
+  height: 50rpx;
+  width: 50rpx;
+  left: 17%;
+  top:50%;
+  margin-top: -25rpx;
 }
 
 .personicon{
   position: absolute;
-  height: 57rpx;
-  width: 57rpx;
-  right:20%;
-  top:22%;
+  height: 50rpx;
+  width: 50rpx;
+  right:17%;
+  top:50%;
+  margin-top: -25rpx;
+}
+
+.searchicon{
+  position: absolute;
+  height: 50rpx;
+  width: 50rpx;
+  left:0; 
+  right:0; 
+  top:0;
+  bottom:0;
+  margin:auto;
+}
+
+.csuimg{
+  width: 90%;
+  height: 15%;
+  opacity:0.6;
+  position: absolute;
+  top: 60rpx;
+  z-index: -1;
+}
+
+.csuicon{
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  overflow:hidden;
+  display: block;
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 40rpx;
+}
+
+.userinfo-nickname {
+  color: #000000;
+  font-family: "楷体";
+  font-size: 27px;
+  margin-top: 20rpx;
+}
+
+.p_button{
+  background-color:rgba(255, 255, 255, 0.5);
+  width: 100%;
+  height:100rpx;
+  margin-top: 10%;
+  font-family: "KaiTi";
+  text-align: left;
+}
+
+text{
+  margin-left: 20rpx;
+  position: relative;
+  font-size: 18px;
 }

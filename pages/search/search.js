@@ -1,4 +1,4 @@
-// pages/personal/personal.js
+// pages/search/search.js
 Page({
 
   /**
@@ -62,30 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  dispath: function () {
-    wx.redirectTo({
-      url: '../home/home',
-    })
-  },
-  search: function () {
-    wx.redirectTo({
-      url: '../search/search',
-    })
-  },
-  find: function () {
-    wx.navigateTo({
-      url: '../home/home',
-    })
-  },
-  lost: function () {
-    wx.navigateTo({
-      url: '../home/home',
-    })
-  },
-  about: function () {
-    wx.navigateTo({
-      url: './about/about',
-    })
   }
 })

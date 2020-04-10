@@ -96,18 +96,31 @@ swiper-item{
 
 .homeicon{
   position: absolute;
-  height: 57rpx;
-  width: 57rpx;
-  left: 20%;
-  top:22%;
+  height: 50rpx;
+  width: 50rpx;
+  left: 17%;
+  top:50%;
+  margin-top: -25rpx;
 }
 
 .personicon{
   position: absolute;
-  height: 57rpx;
-  width: 57rpx;
-  right:20%;
-  top:22%;
+  height: 50rpx;
+  width: 50rpx;
+  right:17%;
+  top:50%;
+  margin-top: -25rpx;
+}
+
+.searchicon{
+  position: absolute;
+  height: 50rpx;
+  width: 50rpx;
+  left:0; 
+  right:0; 
+  top:0;
+  bottom:0;
+  margin:auto;
 }
 
 view.search {padding: 30px 0}

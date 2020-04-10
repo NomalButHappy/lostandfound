@@ -1,8 +1,27 @@
 <!--pages/personal/personal.wxml-->
 
 <view>
+  <view class="csuicon">
+    <open-data type="userAvatarUrl" class="userinfo-avatar">我为长</open-data>
+    <open-data type="userNickName" lang="zh_CN" class="userinfo-nickname"></open-data>
+    <image class="csuimg" src="../img/logo.png">天若有</image>
+  </view>
+
+  <view class="p_button" bindtap="find">
+    <text>我找到的</text>
+  </view>
+
+  <view class="p_button" bindtap="lost">
+    <text>我失去的</text>
+  </view>
+
+  <view class="p_button" bindtap="about">
+    <text>关于程序</text>
+  </view>
+
   <view class="bottom">
     <image class="homeicon" src="../../img2/Icons-Tab_home_d.png" bindtap="dispath"></image>
+    <image class="searchicon" src="../../img2/Icons-Tab_explore_d-1.png" bindtap="search"></image>
     <image class="personicon" src="../../img2/Icons-Tab_profile_d.png"></image>
   </view>
 </view>

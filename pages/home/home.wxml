@@ -10,6 +10,7 @@
     <open-data type="userAvatarUrl" class="userinfo-avatar">我为长</open-data>
     <open-data type="userNickName" lang="zh_CN" class="userinfo-nickname"></open-data>
   </view>
+  
   <view class="swiper-tab">
     <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">失物</view>
     <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">寻物</view>
@@ -43,6 +44,7 @@
   </swiper>
   <view class="bottom">
     <image class="homeicon" src="../../img2/Icons-Tab_home_d.png"></image>
+    <image class="searchicon" src="../../img2/Icons-Tab_explore_d-1.png"></image>
     <image class="personicon" src="../../img2/Icons-Tab_profile_d.png" bindtap="dispath"></image>
   </view>
 </view>
